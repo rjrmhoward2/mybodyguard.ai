@@ -224,8 +224,31 @@ p {
     color: var(--primary-light);
 }
 
-.shop-link {
-    color: var(--accent-cyan);
+.shop-button {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: rgba(149, 198, 111, 0.15);
+    border: 2px solid #95C66F;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    color: #95C66F;
+    transition: all var(--transition-normal);
+}
+
+.shop-button:hover {
+    background: rgba(149, 198, 111, 0.25);
+    border-color: #A8D682;
+    color: #A8D682;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(149, 198, 111, 0.3);
+}
+
+.shop-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
 }
 
 .cta-button-nav {
