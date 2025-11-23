@@ -1203,49 +1203,21 @@ p {
 
 /* Beehiiv Form Container Styling */
 .beehiiv-wrapper {
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .beehiiv-wrapper h3 {
-    margin: 0 0 20px 0;
-    font-size: 24px;
+    color: var(--black);
+    margin-bottom: var(--spacing-lg);
     text-align: center;
-    color: #333;
 }
 
 /* Ensure iframe is responsive */
 .beehiiv-embed {
+    width: 100% !important;
+    min-height: 450px !important;
     border: none !important;
-    border-radius: 8px !important;
-    max-width: 100% !important;
-}
-
-/* Form privacy text */
-.form-privacy {
-    margin-top: 15px;
-    font-size: 14px;
-    color: #666;
-    text-align: center;
-}
-
-/* Mobile responsive */
-@media (max-width: 768px) {
-    .beehiiv-wrapper {
-        padding: 20px;
-    }
-
-    .beehiiv-wrapper h3 {
-        font-size: 20px;
-    }
-
-    .beehiiv-embed {
-        height: 400px !important;
-    }
+    border-radius: var(--radius-md) !important;
 }
 
 /* ==========================================================================
