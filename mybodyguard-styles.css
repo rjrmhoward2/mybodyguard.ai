@@ -11,7 +11,7 @@
     --primary-light: #3385FF;
     --accent-cyan: #00C2FF;
     --accent-purple: #7B61FF;
-    
+
     /* Neutrals */
     --black: #0A0E1A;
     --dark-gray: #1A1F2E;
@@ -19,19 +19,19 @@
     --light-gray: #A0A8B9;
     --lighter-gray: #E5E7EB;
     --white: #FFFFFF;
-    
+
     /* Status Colors */
     --success: #10B981;
     --warning: #F59E0B;
     --error: #EF4444;
-    
+
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-purple) 100%);
     --gradient-accent: linear-gradient(135deg, var(--accent-cyan) 0%, var(--primary-blue) 100%);
-    
+
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    
+
     /* Spacing */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
@@ -40,19 +40,19 @@
     --spacing-xl: 3rem;
     --spacing-2xl: 4rem;
     --spacing-3xl: 6rem;
-    
+
     /* Border Radius */
     --radius-sm: 0.375rem;
     --radius-md: 0.5rem;
     --radius-lg: 1rem;
     --radius-xl: 1.5rem;
-    
+
     /* Shadows */
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
     --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.2);
-    
+
     /* Transitions */
     --transition-fast: 150ms ease;
     --transition-normal: 250ms ease;
@@ -98,16 +98,32 @@ a {
    Typography
    ========================================================================== */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: var(--spacing-md);
 }
 
-h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
-h2 { font-size: clamp(2rem, 4vw, 3rem); }
-h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
-h4 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
+h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h3 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+h4 {
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+}
 
 p {
     margin-bottom: var(--spacing-md);
@@ -358,7 +374,7 @@ p {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: 
+    background:
         radial-gradient(circle at 20% 50%, rgba(0, 102, 255, 0.1) 0%, transparent 50%),
         radial-gradient(circle at 80% 50%, rgba(123, 97, 255, 0.1) 0%, transparent 50%);
 }
@@ -455,8 +471,15 @@ p {
 }
 
 @keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.05); }
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
 }
 
 @keyframes pulse-ring {
@@ -464,6 +487,7 @@ p {
         transform: scale(1);
         opacity: 1;
     }
+
     100% {
         transform: scale(1.5);
         opacity: 0;
@@ -1177,6 +1201,53 @@ p {
     margin-bottom: 0;
 }
 
+/* Beehiiv Form Container Styling */
+.beehiiv-wrapper {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.beehiiv-wrapper h3 {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+
+/* Ensure iframe is responsive */
+.beehiiv-embed {
+    border: none !important;
+    border-radius: 8px !important;
+    max-width: 100% !important;
+}
+
+/* Form privacy text */
+.form-privacy {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .beehiiv-wrapper {
+        padding: 20px;
+    }
+
+    .beehiiv-wrapper h3 {
+        font-size: 20px;
+    }
+
+    .beehiiv-embed {
+        height: 400px !important;
+    }
+}
+
 /* ==========================================================================
    Downloads Section
    ========================================================================== */
@@ -1395,44 +1466,44 @@ p {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    
+
     .hero-content {
         max-width: 100%;
     }
-    
+
     .hero-cta {
         justify-content: center;
     }
-    
+
     .hero-visual {
         order: -1;
     }
-    
+
     .guardian-placeholder {
         width: 300px;
         height: 300px;
     }
-    
+
     .solution-content {
         grid-template-columns: 1fr;
     }
-    
+
     .ecosystem-companies {
         grid-template-columns: 1fr;
     }
-    
+
     .merch-hero {
         grid-template-columns: 1fr;
     }
-    
+
     .waitlist-content {
         grid-template-columns: 1fr;
     }
-    
+
     .sister-sites-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1442,71 +1513,76 @@ p {
     .nav-links {
         display: none;
     }
-    
+
     .mobile-menu-toggle {
         display: flex;
     }
-    
-    h1 { font-size: 2.5rem; }
-    h2 { font-size: 2rem; }
-    
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
     .section {
         padding: var(--spacing-2xl) 0;
     }
-    
+
     .hero {
         min-height: auto;
         padding-top: calc(73px + var(--spacing-2xl));
     }
-    
+
     .hero-cta {
         flex-direction: column;
     }
-    
+
     .cta-button {
         width: 100%;
     }
-    
+
     .hero-stats {
         grid-template-columns: 1fr;
     }
-    
+
     .problem-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .explanation-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .slogan-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .timeline:before {
         left: 10px;
     }
-    
+
     .timeline-item {
         padding-left: 40px;
     }
-    
+
     .timeline-dot {
         left: 0;
     }
-    
+
     .kickstarter-details {
         grid-template-columns: 1fr;
     }
-    
+
     .tiers-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .downloads-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-grid {
         grid-template-columns: 1fr;
     }
@@ -1516,7 +1592,7 @@ p {
     .container {
         padding: 0 var(--spacing-md);
     }
-    
+
     .slogan-grid {
         grid-template-columns: 1fr;
     }
