@@ -1145,7 +1145,7 @@ p {
 
 .waitlist-form-container {
     background: var(--white);
-    padding: var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-md) var(--spacing-xs) var(--spacing-md);
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-xl);
 }
@@ -1199,6 +1199,7 @@ p {
     color: var(--light-gray);
     margin-top: var(--spacing-xs);
     margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 /* Beehiiv Form Container Styling */
@@ -1208,6 +1209,7 @@ p {
 
 .beehiiv-wrapper h3 {
     color: var(--black);
+    margin-top: 0;
     margin-bottom: var(--spacing-xs);
     text-align: center;
 }
