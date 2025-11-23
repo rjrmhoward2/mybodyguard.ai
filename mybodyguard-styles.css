@@ -1145,7 +1145,7 @@ p {
 
 .waitlist-form-container {
     background: var(--white);
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-xl);
 }
@@ -1197,7 +1197,7 @@ p {
     text-align: center;
     font-size: 0.875rem;
     color: var(--light-gray);
-    margin-top: var(--spacing-md);
+    margin-top: var(--spacing-xs);
     margin-bottom: 0;
 }
 
@@ -1208,14 +1208,14 @@ p {
 
 .beehiiv-wrapper h3 {
     color: var(--black);
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
     text-align: center;
 }
 
 /* Ensure iframe is responsive */
 .beehiiv-embed {
     width: 100% !important;
-    min-height: 450px !important;
+    min-height: 420px !important;
     border: none !important;
     border-radius: var(--radius-md) !important;
 }
